@@ -1,0 +1,9 @@
+package release1801;
+
+import org.testng.annotations.Test;
+
+public class BearingPointTestTest {
+  @Test
+  public void f() {
+  }
+}

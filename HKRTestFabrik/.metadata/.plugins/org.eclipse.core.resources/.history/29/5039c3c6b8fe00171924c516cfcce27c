@@ -1,0 +1,34 @@
+package release1801;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import org.testng.annotations.Test;
+
+import de.hkr.base.TestbaseBP;
+import sample.ScreenShotMethode;
+
+@Test
+public class BearingPointTest extends TestbaseBP{
+	
+
+	public void pearingpointTest() {
+		@SuppressWarnings("unused")
+		WebElement element = driver.findElement(By.className("logo"));
+		/*
+		try {
+			driver.wait(2000);
+		} catch (InterruptedException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
+		*/
+		ScreenShotMethode.captureScreenShot(driver);
+		
+			}
+	
+
+	}
+
+
+	

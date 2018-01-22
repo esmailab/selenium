@@ -1,0 +1,49 @@
+package sample;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.AssertJUnit;
+
+import org.testng.annotations.Test;
+
+import de.hkr.base.SampleTestbase;
+//import utilities.DataProviderUtil2;
+//import de.hkr.base.Testbase;
+//import utilities.DataProviderUtil2;
+
+public class GoogleSearch extends SampleTestbase{
+	
+	
+	@Test
+	public void googlesearchTest(String googlesearch) {
+		WebElement element = driver.findElement(By.name("q"));
+		
+		String suchbegrieff = "Bearing Point";
+				element.sendKeys(suchbegrieff);
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+				AssertJUnit.assertTrue(!suchbegrieff.isEmpty());
+				WebElement element2 = driver.findElement(By.id("gsr"));
+				
+			
+						element2.click();
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			 
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+package release1801;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.AssertJUnit;
+//import org.testng.annotations.Test;
+
+import de.hkr.base.TestbaseBP;
+
+public class BearingPointTest extends TestbaseBP{
+	
+	
+	
+	public BearingPointTest() {
+	WebElement MyElement = driver.findElement(By.className("logo"));
+		ScreenShotMethode.captureScreenShot(driver);
+		
+		//ScreenShotMethode.captureScreenShot(driver);
+		AssertJUnit.assertTrue(!((Object) MyElement).equals("BearingPoint"));
+	}
+		
+}

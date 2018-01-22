@@ -1,0 +1,88 @@
+package sample;
+
+import java.io.File;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.testng.AssertJUnit;
+
+import org.testng.annotations.Test;
+
+import com.sun.glass.ui.Robot;
+import com.sun.javafx.geom.Rectangle;
+
+//import com.sun.java.util.jar.pack.Package.File;
+import com.google.common.io.Files;
+import de.hkr.base.SampleTestbase;
+//import utilities.DataProviderUtil2;
+//import de.hkr.base.Testbase;
+//import utilities.DataProviderUtil2;
+
+public class GoogleSearch extends SampleTestbase{
+	
+	  @Test
+	     public void openBrowser() throws Exception {
+	   	
+	   	  try{
+	   		//the below statement will throw an exception as the element is not found, Catch block will get executed and takes the screenshot.
+			  driver.findElement(By.id("testing")).sendKeys("test");
+	             
+	               //if we remove the below comment, it will not return exception and screen shot method will not get executed.
+			  //driver.findElement(By.id("gbqfq")).sendKeys("test");
+		  }
+		  catch (Exception e){
+			  System.out.println("I'm in exception");
+	//calls the method to take the screenshot.
+			  getscreenshot();
+	 	  }
+	  }
+	  
+	  public void getscreenshot() throws Exception 
+	  {
+	          File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	       //The below method will save the screen shot in d drive with name "screenshot.png"
+	          Files.copy(scrFile, new File("\\hkr.ber.SeleniumSet\\test-output\\screenshot.png"));
+	  }
+
+	   	  
+
+
+
+	/*
+	
+	@Test
+	public void googlesearchTest() {
+		WebElement element = driver.findElement(By.name("q"));
+		
+		String suchbegrieff = "Bearing Point";
+				element.sendKeys(suchbegrieff);
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+				AssertJUnit.assertTrue(!suchbegrieff.isEmpty());
+				WebElement element2 = driver.findElement(By.id("gsr"));
+				
+			
+						element2.click();
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+		*/	 
+	}
+
+
+
+
+
+
+
+

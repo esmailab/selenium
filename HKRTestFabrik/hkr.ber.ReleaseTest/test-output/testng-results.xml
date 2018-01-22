@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-01-22T10:47:26Z" name="Default suite" finished-at="2018-01-22T10:47:30Z" duration-ms="3644">
+    <groups>
+    </groups>
+    <test started-at="2018-01-22T10:47:26Z" name="Default test" finished-at="2018-01-22T10:47:30Z" duration-ms="3644">
+      <class name="MachHomepage.Machtest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:MachHomepage.Machtest@68567e20]" started-at="2018-01-22T11:47:19Z" name="setup" finished-at="2018-01-22T11:47:26Z" duration-ms="6954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="pearingpointTest()[pri:0, instance:MachHomepage.Machtest@68567e20]" started-at="2018-01-22T11:47:26Z" name="pearingpointTest" finished-at="2018-01-22T11:47:30Z" duration-ms="3602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pearingpointTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MachHomepage.Machtest@68567e20]" started-at="2018-01-22T11:47:30Z" name="tearDown" finished-at="2018-01-22T11:47:32Z" duration-ms="2681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MachHomepage.Machtest -->
+      <class name="MachHomepage.ScreenShotMethode">
+        <test-method signature="TestJavaS1()[pri:0, instance:MachHomepage.ScreenShotMethode@76ed1b7c]" started-at="2018-01-22T11:47:30Z" name="TestJavaS1" finished-at="2018-01-22T11:47:30Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestJavaS1 -->
+      </class> <!-- MachHomepage.ScreenShotMethode -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

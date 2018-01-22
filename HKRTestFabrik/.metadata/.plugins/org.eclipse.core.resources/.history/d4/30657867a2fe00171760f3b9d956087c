@@ -1,0 +1,25 @@
+package master;
+
+import example.FensterWechseln;
+import sample.GoogleSearch;
+
+public class Newew {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	FensterWechseln();
+	GoogleSearch();
+	
+	}
+
+	private static void FensterWechseln() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void GoogleSearch() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

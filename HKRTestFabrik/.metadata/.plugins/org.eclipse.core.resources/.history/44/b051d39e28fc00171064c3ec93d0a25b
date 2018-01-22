@@ -1,0 +1,52 @@
+package stepDefinition;
+
+public class claudiaFroehlich {
+	# Bitte diese reservierte Cucumber Key words wie unten verwenden:
+		# Feature:, Scenario:, Given, And, When, Then
+		# Bitte kein Umlaut verwenden!
+		# Bitte vor Feature Zeile keine Zeile leer lassen!
+		# Bitte sample.feature nicht ändern!
+		# Du kannst eine Kopie von sample.feature erstellen und hier umbenennen und für eur Zweck verwenden.
+		# Link für weitere Information:  http://docs.behat.org/en/v2.5/guides/1.gherkin.html
+		Feature: Urlalaubsplan
+
+		  Scenario: Ob sie einen Plan hat # C:/Users/abbas/HKR/HKRTestFabrik/CucumberSet/src/test/java/Features/claudiaFroehlich.feature:10
+		    Given Sie hat ein Ticket
+		    And Sie hat Urlaub
+		    When Sie zum Flughafen kommt
+		    Then Sie kann fliegen
+
+		1 Scenarios (1 undefined)
+		4 Steps (4 undefined)
+		0m0,000s
+
+
+		You can implement missing steps with the snippets below:
+
+		@Given("^Sie hat ein Ticket$")
+		public void sie_hat_ein_Ticket() throws Throwable {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new PendingException();
+		}
+
+		@Given("^Sie hat Urlaub$")
+		public void sie_hat_Urlaub() throws Throwable {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new PendingException();
+		}
+
+		@When("^Sie zum Flughafen kommt$")
+		public void sie_zum_Flughafen_kommt() throws Throwable {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new PendingException();
+		}
+
+		@Then("^Sie kann fliegen$")
+		public void sie_kann_fliegen() throws Throwable {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new PendingException();
+		}
+
+
+
+}

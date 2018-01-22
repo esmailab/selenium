@@ -1,0 +1,32 @@
+package release1801;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import org.testng.annotations.Test;
+
+import de.hkr.base.TestbaseBP;
+import sample.ScreenShotMethode;
+
+@Test
+public class BearingPointTest extends TestbaseBP{
+	
+
+	public void pearingpointTest() throws InterruptedException {
+		@SuppressWarnings("unused")
+		WebElement element = driver.findElement(By.className("logo"));
+	
+		ScreenShotMethode.captureScreenShot(driver);
+		//element = driver.findElement(By.xpath("//a[contains(@href, '/de-de/unser-team/karriere/')])[11]"));
+		//element.click();
+		driver.get("https://www.bearingpoint.com/de-de/unser-team/karriere/");
+		ScreenShotMethode.captureScreenShot(driver);
+		driver.get("https://www.bearingpoint.com/de-de/unser-team/karriere/karrierebeibearingpoint/");
+		ScreenShotMethode.captureScreenShot(driver);
+			}
+	
+
+	}
+
+
+	
